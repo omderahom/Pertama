@@ -1,0 +1,178 @@
+<!-- No berapa Start Pasang CSS Load YouTubeModi -->
+<![CDATA[
+/*! lazyload-youtube.css */
+.youtube-lazyload, .youtube-lazyload .play-button, .youtube-lazyload img {cursor: pointer;}
+.youtube-lazyload {background-color: #000; margin-bottom: 20px; position: relative; padding-top: 56.25%; overflow: hidden;}
+.youtube-lazyload img {width: 100%; position: absolute; top: 0; left: 0;}
+.youtube-lazyload .play-button {width: 100px; height: 60px; background-color: #282828; z-index: 1; border-radius: 9px; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);}
+.youtube-lazyload .play-button:before {content: ""; border-style: solid; border-width: 15px 0 15px 28px; border-color: transparent transparent transparent #fff; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);}
+.youtube-lazyload .play-button:hover {background-color: red;}
+.youtube-lazyload iframe {height: 100%; width: 100%; position: absolute; top: 0; left: 0;}
+<![CDATA[
+/*! embed-video-responsive.css */
+.video-responsive {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  width: 100%;
+}
+.video-responsive iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+<![CDATA[
+/*! embed-video-responsive.css */
+.video-responsive {
+  position: relative;
+  padding-bottom: 56.25%; /* Rasio 16:9 */
+  height: 0;
+  overflow: hidden;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.video-responsive iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+.youtube-thumb {
+      display:none;
+      visibility:hidden;
+}
+.hidden-image {
+    opacity: 0; /* Gambar menjadi transparan */
+    position: absolute; /* Pindahkan dari posisi tata letak utama */
+    left: -9999px; /* Tempatkan di luar layar */
+    height: 0; /* Pastikan tidak mengambil ruang di tata letak */
+    width: 0; /* Pastikan tidak mengambil ruang di tata letak */
+    display: none; /* Sembunyikan elemen sepenuhnya */
+  }
+.hidden-image {
+    display: none; /* Gambar tidak akan muncul secara visual */
+  }
+<!-- No berapa End Pasang CSSLazy Load YouTubeModi -->
+/* Paypal Donation Box Bounce by igniel.com */
+.ignielDonasi {
+	background-color:#bde0b9; /* warna background */
+	color:#000;
+	display:-webkit-box; display:-webkit-flex; display:-moz-box; display:-ms-flexbox; display:flex; align-items:flex-start; flex-wrap:nowrap; justify-content:center; margin:20px 0px; display:flex; padding:15px; overflow:hidden; transition:all .3s ease; border-radius:7px;
+}
+.ignielDonasi .ikon a {
+	background-color:#008c5f; /* warna ikon */
+	color:#fff;
+	text-decoration:none; display:block; padding:5px; border-radius:7px; text-align:center; -webkit-animation:ignielBounce 1s linear 1s infinite normal; animation:ignielBounce 1s linear 1s infinite normal
+}
+.ignielDonasi svg {width:50px; height:50px}
+.ignielDonasi svg path {fill:#bde0b9}
+.ignielDonasi .ikon {margin-right:15px}
+.ignielDonasi .deskripsi {line-height:1.5em;} 
+.ignielDonasi .deskripsi .judul {font-size:18px; font-weight:bold; display:block; margin-bottom:10px;}
+
+@keyframes ignielBounce {
+  0%,100%{-webkit-transform:scale3d(1,1,1);transform:scale3d(1,1,1)}
+  30%{-webkit-transform:scale3d(1.25,.75,1);transform:scale3d(1.25,.75,1)}
+  40%{-webkit-transform:scale3d(.75,1.25,1);transform:scale3d(.75,1.25,1)}
+  50%{-webkit-transform:scale3d(1.15,.85,1);transform:scale3d(1.15,.85,1)}
+  65%{-webkit-transform:scale3d(.95,1.05,1);transform:scale3d(.95,1.05,1)}
+  75%{-webkit-transform:scale3d(1.05,.95,1);transform:scale3d(1.05,.95,1)}
+}
+@-webkit-keyframes ignielBounce{
+  0%,100%{-webkit-transform:scale3d(1,1,1);transform:scale3d(1,1,1)}
+  30%{-webkit-transform:scale3d(1.25,.75,1);transform:scale3d(1.25,.75,1)}
+  40%{-webkit-transform:scale3d(.75,1.25,1);transform:scale3d(.75,1.25,1)}
+  50%{-webkit-transform:scale3d(1.15,.85,1);transform:scale3d(1.15,.85,1)}
+  65%{-webkit-transform:scale3d(.95,1.05,1);transform:scale3d(.95,1.05,1)}
+  75%{-webkit-transform:scale3d(1.05,.95,1);transform:scale3d(1.05,.95,1)}
+}
+<!-- No berapa Start css kotak donasi  -->
+/*
+- Widget Donasi ala Igniel
+- Source code: https://www.igniel.com/2023/04/widget-donasi-blog.html
+*/
+.ignielDonasi {
+  --background: #f9f9f9;
+  --backgroundHover: #f0f0f0;
+  --color: #2f2f2f;
+  --colorHover: #2f2f2f;
+  --icon: #5c5c5c;
+  --col: 2;
+  margin-top: 2rem;
+}
+.ignielDonasi path {
+  fill: none;
+  stroke: var(--icon);
+  stroke-width: 1.5px;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-miterlimit: 10;
+}
+.ignielDonasi svg:first-child {
+  height: 2rem;
+  width: 35px;
+}
+.ignielDonasi svg:last-child {
+  height: 1rem;
+  width: 1rem;
+}
+.ignielDonasi-judul {
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+.ignielDonasi img {
+  width: 35px;
+}
+.ignielDonasi-ikon {
+  margin-right: 1rem;
+}
+.ignielDonasi-isi {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(var(--col), 1fr);
+}
+.ignielDonasi-isi a {
+  align-items: center;
+  background-color: var(--background);
+  border-radius: 7px;
+  color: var(--color);
+  display: flex;
+  gap: 1rem;
+  padding: .75rem 1.25rem;
+  text-decoration: none;
+  transition: all .3s;
+}
+.ignielDonasi-isi a:hover {
+  background-color: var(--backgroundHover);
+  color: var(--colorHover);
+  text-decoration: none;
+}
+.ignielDonasi-isi .wallet {
+  flex-direction: column;
+}
+.ignielDonasi-isi .wallet i {
+  display: block;
+  font-size: 11px;
+  font-style: normal;
+  line-height: 13px;
+}
+.ignielDonasi-isi a, .ignielDonasi-isi a span {
+  flex-grow: 1;
+}
+@media screen and (max-width: 768px) {
+  .ignielDonasi-isi {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 568px) {
+  .ignielDonasi-isi {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+<!-- No berapa End css kotak donasi -->
