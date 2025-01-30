@@ -20,3 +20,8 @@
 <link href='/sitemap.xml' rel='sitemap' title='Sitemap' type='application/xml'/>  
 <link expr:href='data:blog.url' rel='canonical'/>
 <!-- No. 0 End Meta Tag Otomatis -->
+<!-- No. 1 Star Meta Robot -->
+<b:if cond='data:view.isSearch or data:view.isArchive'>
+<meta content='noindex, noarchive' name='robots'/>
+</b:if>
+<!-- No. 1 End Meta Robot -->
